@@ -5,17 +5,6 @@ LITERS_PER_KG = 1000
 
 print('Здравствуйте! Вас приветствует программ: "Fit Life".')
 
-
-# # проверить введено ли число
-# def get_number_input(prompt: str):
-#     while True:
-#         user_input = input(prompt)
-#         try:
-#             number = float(user_input)
-#             return number
-#         except ValueError:
-#             ...
-
 # 1. Знакомство
 # TODO: Спроси у пользователя имя и сохрани в переменную user_name
 user_name = input("Введите, пожалуйста, ваше имя: ")
@@ -46,9 +35,10 @@ water_ml = user_weight * WATER_PER_KG
 water_needed = round((water_ml / LITERS_PER_KG), 2)
 
 # 4. Вывод красивого результата
-# TODO: Используй f-строку, чтобы вывести приветствие, например: "Привет, Иван!"
+# TODO: Используй f-строку, чтобы вывести приветствие, например:
+#  "Привет, Иван!"
 # TODO: Выведи возраст, ИМТ (округленный до 1 знака) и норму воды.
-print(f"\nПривет, {user_name}")
+print(f"Привет, {user_name}")
 print(f"Отчет для пользователя: {user_name}")
 print(f"Ваш возраст: {user_age}")
 print(f"Ваш Индекс Массы Тела: {bmi}")
